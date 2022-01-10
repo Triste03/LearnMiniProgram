@@ -5,7 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    name: "coder",
+    age: 18,
+    students: [{
+        id: 110,
+        name: "kobe",
+        age: 20
+      },
+      {
+        id: 111,
+        name: "james",
+        age: 22
+      },
+      {
+        id: 112,
+        name: "triste",
+        age: 24
+      }
+    ],
+    counter: 0
+  },
+  incerment() {
+    this.setData({
+      counter: this.data.counter + 1
+    })
+  },
+  decrement() {
+    this.setData({
+      counter: this.data.counter - 1
+    })
   },
 
   /**
