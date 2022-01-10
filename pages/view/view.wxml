@@ -1,0 +1,8 @@
+<!--pages/view/view.wxml-->
+<view class="box1" 
+      hover-class="box1-hover"
+      hover-start-time="1000"
+      hover-stay-time="2000">box1</view>
+<view class="father" hover-class="father-hover">
+  <view class="son" hover-class="son-hover" hover-stop-propagation> </view>
+</view>

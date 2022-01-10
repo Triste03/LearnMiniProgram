@@ -1,0 +1,8 @@
+<!--pages/text/text.wxml-->
+<text>Hello World\n</text>
+<text selectable>你好，小程序\n</text>
+<text>Hello World\n</text>
+<text space="nbsp">Hello World\n</text>
+<text space="emsp">Hello World\n</text>
+<text space="ensp">Hello World\n</text>
+<text decode>5 &gt; 3</text>

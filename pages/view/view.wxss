@@ -1,0 +1,29 @@
+/* pages/view/view.wxss */
+.box1 {
+  background-color: purple;
+  width: 100px;
+  height: 100px;
+}
+
+.box1-hover {
+  background-color: red;
+}
+
+.father {
+  background-color: green;
+  width: 500px;
+  height: 500px;
+  margin-top: 20px;
+}
+
+.son {
+  background-color: orange;
+  width: 200px;
+  height: 200px;
+}
+.father-hover{
+  background-color: pink;
+}
+.son-hover{
+  background-color: blue;
+}

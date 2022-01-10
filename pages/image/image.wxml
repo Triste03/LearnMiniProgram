@@ -1,0 +1,5 @@
+
+<image src="https://webpack.js.org/site-logo.1fcab817090e78435061.svg"/>
+
+<button bindtap="handleChoosedAlbum">获取图片</button>
+<image src="{{imagePath}}" mode="aspectFit" show-menu-by-longpress/>

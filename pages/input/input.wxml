@@ -1,0 +1,7 @@
+
+<input type="text" type="digit"/>
+<input type="text" value="哈哈哈哈"/>
+<input type="text" placeholder="输入内容"/>
+<input type="text" bindinput="handleInput"/>
+<input type="text" bindfocus="handleFocus"/>
+<input type="text" bindblur="handleBlur"/>
