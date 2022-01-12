@@ -1,0 +1,15 @@
+<view bindtouchstart="start"
+      bindtouchend="end"
+      bindtouchmove="move"
+      bindtap="tap"
+      bindlongpress="longpress"
+      class="box1"></view>
+
+<view class="father"  capture-bind:tap="father" bindtap="fatherp" id="father">
+  <view class="son" capture-bind:tap="son" bindtap="sonp" id="son">
+    <view class="gradson" capture-bind:tap="gradson" bindtap="gradsonp" data-name="kobe" id="gradson"></view>
+  </view>
+</view>
+<view class="outer" bindtap="outer" id="outer">
+<view class="inner" bindtap="inner" id="inner"></view>
+</view>
