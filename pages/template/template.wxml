@@ -1,0 +1,10 @@
+<template name="info"> 
+<view>嘿嘿嘿</view>
+<block>哈哈哈</block>
+<scroll-view scroll-x>嚯嚯嚯</scroll-view>
+</template>
+<template is="info"></template>
+<template name="message">
+<view>{{index}}--{{item}}--{{time}}</view>
+</template>
+<template is="message" data="{{index:0,item:'kobe',time:'2021-01-12'}}"/>

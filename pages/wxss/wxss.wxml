@@ -1,0 +1,6 @@
+<view class="box1">哈哈哈</view>
+<view id="box2">嘿嘿嘿</view>
+<view>嚯嚯嚯</view>
+<button bindtap="handleIsActive">切换颜色</button>
+<view class='{{isActive?"active":""}}'>呵呵呵</view>
+<view>{{NowTime}}</view>

@@ -1,0 +1,20 @@
+<wxs module="sum">
+  var sum = function (num1, num2) {
+    return num1 + num2;
+  }
+  module.exports = {
+    sum: sum
+  }
+</wxs>
+<view>{{sum.sum(10,20)}}</view>
+
+<wxs module="formatPrice">
+  function formatPrice(price, number) {
+    var number = number || 2;
+    return price.toFixed(number);
+  }
+  module.exports = {
+    formatPrice: formatPrice
+  }
+</wxs>
+<view>{{formatPrice.formatPrice(price,1)}}</view>

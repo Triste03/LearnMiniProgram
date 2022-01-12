@@ -1,5 +1,11 @@
 {
   "pages": [
+    "pages/wxs/wxs",
+    "pages/login/login",
+    "pages/template/template",
+    "pages/include/include",
+    "pages/search/saerch",
+    "pages/wxss/wxss",
     "pages/home/home",
     "pages/about/about"
   ],

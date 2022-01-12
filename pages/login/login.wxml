@@ -1,0 +1,16 @@
+<include src="/pages/include/include" />
+<view wx:for="{{movies}}" wx:key="item">{{item}}---{{index}}</view>
+<view wx:for="{{movies}}" wx:key="movie" wx:for-item="movie" wx:for-index="num">{{movie}}---{{num}}</view>
+<view wx:if="{{score>90}}">
+  <text>优秀</text>
+</view>
+
+<view wx:elif="{{score>70}}">良好</view>
+<view wx:else="{{score<60}}">差</view>
+<view hidden="{{isHidden}}">
+  嘿嘿嘿
+</view>
+<button bindtap="handleBtn">切换</button>
+<block>牛逼</block>
+<import src="../template/template" />
+<template is="info"></template>
