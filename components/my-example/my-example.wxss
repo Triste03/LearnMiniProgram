@@ -1,0 +1,17 @@
+.container{
+  display: flex;
+  height: 78rpx;
+  /* background-color: red; */
+  text-align: center;
+  line-height: 78rpx;
+}
+.list_item{
+  flex:1;
+}
+.active{
+  color:red;
+}
+.active text{
+  border-bottom: 6rpx solid red;
+  padding:5px 10px;
+}

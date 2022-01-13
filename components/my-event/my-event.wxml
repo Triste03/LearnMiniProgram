@@ -1,0 +1,2 @@
+<button bindtap="handleIncrement" size="mini">+1</button>
+<view></view>

@@ -1,2 +1,1 @@
-<!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<my-example title="{{['衣服','裤子','鞋子']}}" bind:itemClick="itemClick"/>
