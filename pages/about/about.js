@@ -7,7 +7,14 @@ Page({
   data: {
 
   },
-
+  itemClick(e) {
+    console.log(e);
+  },
+  handleData(){
+    const my=this.selectComponent("#my")
+    // console.log(my);
+    my.handleCounter(10)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

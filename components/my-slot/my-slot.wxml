@@ -1,0 +1,7 @@
+<view>
+我是头部
+</view>
+<slot/>
+<view>
+我是尾部
+</view>

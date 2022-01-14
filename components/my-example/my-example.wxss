@@ -1,0 +1,16 @@
+.container{
+  display: flex;
+  height: 78rpx;
+  text-align: center;
+  line-height: 78rpx;
+}
+.tabItem{
+  flex: 1;
+}
+.active{
+  color:red;
+}
+.active text{
+  padding:0 10px;
+  border-bottom: 3px solid red;
+}

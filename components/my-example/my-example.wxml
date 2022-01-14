@@ -1,0 +1,8 @@
+<view class="container">
+  <block wx:for="{{titles}}"  wx:key="item">
+    <view class="tabItem {{currentIndex == index ?'active':''}}" 
+          bindtap="handleItemClick" 
+          data-index="{{index}}"><text>{{item}}</text></view>
+  </block>
+</view>
+<view>组件内当前计数：{{counter}}</view>

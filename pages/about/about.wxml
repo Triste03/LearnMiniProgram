@@ -1,2 +1,11 @@
-<!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+
+<my-example titles="{{['裤子','衣服','鞋子']}}" bind:itemClick="itemClick" id="my"/>
+<button size="mini" bindtap="handleData">改变数据</button>
+<my-slot>
+<text>我是单个插槽</text>
+</my-slot>
+<my-mslot>
+<button slot="slot2">阿妞</button>
+<view slot="slot1">卡了</view>
+<slider slot="slot3" value="20"></slider>
+</my-mslot>
