@@ -1,3 +1,7 @@
 <!--pages/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+<navigator url="/pages/about/about">跳转到关于页面</navigator>
+<navigator url="/pages/about/about" open-type="redirect">跳转到关于页面1</navigator>
+<navigator url="/pages/about/about" open-type="switchTab">跳转到关于页面2</navigator> 
+<navigator url="/pages/about/about?name=coder&age=18" open-type="reLaunch">跳转到关于页面3</navigator>

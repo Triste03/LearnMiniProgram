@@ -1,18 +1,22 @@
-// pages/home.js
+// pages/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
-  },
 
+  },
+  handleBack(){
+    wx.navigateBack({
+      delta: 0,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+console.log(options);
   },
 
   /**
@@ -40,7 +44,12 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    const pages = getCurrentPages();
+    console.log(pages);
+    const home = pages[pages.length - 2]
+    home.setData({
+      title: "哈哈哈哈"
+    })
   },
 
   /**
