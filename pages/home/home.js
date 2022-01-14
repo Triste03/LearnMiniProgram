@@ -1,4 +1,5 @@
 // pages/home.js
+import request from '../../services/network';
 Page({
 
   /**
@@ -12,9 +13,71 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // wx.request({
+    //     url: 'http://httpbin.org',
+    //     success: (res) => {
+    //       console.log(res);
+    //     }
+    //   }),
+    wx.request({
+        url: 'http://httpbin.org/post',
+        method: "post",
+        success: (res) => {
+          console.log(res);
+        },
+        data: {
+          name: "coder",
+          age: 20
+        }
+      }),
+      request({
+        url: 'http://httpbin.org/post',
+        method: "post"
+      }).then(res => {
+        console.log(res);
+      }).catch(err => {
+        console.log(err);
+      })
   },
-
+  showToast() {
+    wx.showToast({
+      title: 'loading',
+      mask: true,
+      duration: 3000,
+      icon: "error"
+    })
+  },
+  showModal() {
+    wx.showModal({
+      cancelColor: 'red',
+      title: "牛逼",
+      content: "真的吗？",
+      cancelText: "退出",
+      showCancel: false,
+      editable: true,
+      placeholderText: "牛逼plus"
+    })
+  },
+  showLoading() {
+    wx.showLoading({
+      title: '加载中',
+      mask: true
+    })
+    setTimeout(function () {
+      wx.hideLoading()
+    }, 2000)
+  },
+  showActionSheet() {
+    wx.showActionSheet({
+      itemList: ['拍照', '相册', '转发'],
+      success(res) {
+        console.log(res.tapIndex)
+      },
+      fail(res) {
+        console.log(res.errMsg)
+      },
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -61,6 +124,10 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    return {
+      title: "第一个小程序",
+      path: "/pages/about/about",
+      imageUrl: "https://webpack.js.org/site-logo.1fcab817090e78435061.svg"
+    }
   }
 })
